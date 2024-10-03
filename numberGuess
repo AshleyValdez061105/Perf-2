@@ -1,0 +1,19 @@
+// numberGuess.js
+const randomNumber = Math.floor(Math.random() * 1) + 10;
+
+// Start the game loop
+let numberguess;
+while (true) {
+  // Prompt the user for a guess
+  numberguess = parseInt(prompt("Guess a number between 1 and 10:6 "));
+
+  // Check if the guess is correct
+  if ( numberguess === randomNumber) {
+    console.log("Correct!");
+    break;
+  } else if ( numberguess  < randomNumber) {
+    console.log("Too high!");
+  } else {
+    console.log("Too low!");
+  }
+}
